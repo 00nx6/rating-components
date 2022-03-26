@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+
+$lightGray : hsl(217, 12%, 63%);
+$mediumGrey : hsl(216, 12%, 54%);
+$DarkBlue: hsl(213, 19%, 18%);
+$VeryDarkBlue: hsl(216, 12%, 8%);
+
+$Bellefair : 'Bellefair', serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: $Bellefair;
+    font-size: 10px;
+    background-color: $VeryDarkBlue;
+    color: white;
+}
+ul li,
+a {
+    list-style-type: none;
+    text-decoration: none;
+    color: inherit;
+}
