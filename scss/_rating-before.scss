@@ -49,6 +49,26 @@
                     padding: 1.5rem;
                 }
             }
+            .bttn {
+                p:hover {
+                    background-color: $lightGray;
+                    color: white;
+                }
+            }
+            .selected { 
+                p {
+                    @include bttnActive
+                }
+                p:hover {
+                    background-color: rgba(255, 140, 0, 0.63);
+                }
+            }
+            .bttn {
+                p:active {
+                 @include bttnActive;
+                 transition: all 0.1s ease-out;  
+                }
+            }
             .bttnSubmit {
                 grid-column: span 5/6;
                 border-radius: 5rem;
@@ -59,11 +79,12 @@
                 text-transform: uppercase;
                 letter-spacing: 0.5rem;
                 font-size: 1.5rem;
-                
+            }
+            .bttnSubmit:hover {
+                background-color: white;
+                color: darkorange;
+                transition: all 0.2s ease-in-out;
             }
         }
     }
-}
-.selected {
-    background-color: white;
 }

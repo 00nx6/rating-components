@@ -1,0 +1,27 @@
+@import 'reset';
+.hidden {
+    display: none;
+}
+.post {
+    .recieved {
+        display: grid;
+        justify-items: center;
+        text-align: center;
+        gap: 1rem;
+        .userFeedback {
+            font-size: 2rem;
+            color: darkorange;
+            background-color: $DarkBlue;
+            padding: 1rem 2rem;
+            border-radius: 5rem;
+        }
+        .text {
+            h1 {
+                font-size: 3rem;
+            }
+            p {
+                font-size: 2rem;
+            }
+        }
+    }
+}

@@ -1,5 +1,50 @@
 @import url(https://fonts.googleapis.com/css?family=Bellefair:regular);
 @import url(https://fonts.googleapis.com/css?family=Bellefair:regular);
+@import url(https://fonts.googleapis.com/css?family=Bellefair:regular);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Bellefair", serif;
+  font-size: 10px;
+  background-color: black;
+  color: white;
+}
+
+ul li,
+a {
+  list-style-type: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.hidden {
+  display: none;
+}
+
+.post .recieved {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+.post .recieved .userFeedback {
+  font-size: 2rem;
+  color: darkorange;
+  background-color: #252d37;
+  padding: 1rem 2rem;
+  border-radius: 5rem;
+}
+.post .recieved .text h1 {
+  font-size: 3rem;
+}
+.post .recieved .text p {
+  font-size: 2rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -74,6 +119,22 @@ a {
   width: 4.5rem;
   padding: 1.5rem;
 }
+.genCont .boxCont .buttonCont .bttn p:hover {
+  background-color: #959eac;
+  color: white;
+}
+.genCont .boxCont .buttonCont .selected p {
+  background-color: darkorange;
+  color: white;
+}
+.genCont .boxCont .buttonCont .selected p:hover {
+  background-color: rgba(255, 140, 0, 0.63);
+}
+.genCont .boxCont .buttonCont .bttn p:active {
+  background-color: darkorange;
+  color: white;
+  transition: all 0.1s ease-out;
+}
 .genCont .boxCont .buttonCont .bttnSubmit {
   grid-column: span 5/6;
   border-radius: 5rem;
@@ -85,9 +146,10 @@ a {
   letter-spacing: 0.5rem;
   font-size: 1.5rem;
 }
-
-.selected {
+.genCont .boxCont .buttonCont .bttnSubmit:hover {
   background-color: white;
+  color: darkorange;
+  transition: all 0.2s ease-in-out;
 }
 
 * {
