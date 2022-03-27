@@ -1,9 +1,93 @@
-@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
-.box__container {
+@import url(https://fonts.googleapis.com/css?family=Bellefair:regular);
+@import url(https://fonts.googleapis.com/css?family=Bellefair:regular);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Bellefair", serif;
+  font-size: 10px;
+  background-color: black;
+  color: white;
+}
+
+ul li,
+a {
+  list-style-type: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.genCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+.genCont .boxCont {
+  background-color: #121417;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+.genCont .boxCont .starCont {
+  background-color: #252d37;
   padding: 1rem;
+  border-radius: 50%;
+  align-self: flex-start;
+  display: block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.genCont .boxCont .writingCont h1 {
+  margin: 2rem;
+  -webkit-margin-start: 0;
+          margin-inline-start: 0;
+  font-size: 4rem;
+  font-weight: 500;
+}
+.genCont .boxCont .writingCont p {
+  font-size: 2rem;
+}
+.genCont .boxCont .buttonCont {
   display: grid;
-  justify-items: center;
-  margin: 50vmin;
+  grid-template-rows: repeat(2, 5rem);
+  grid-template-columns: repeat(5, 4.5rem);
+  width: 100%;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.genCont .boxCont .buttonCont .bttn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.genCont .boxCont .buttonCont .bttn p {
+  background-color: #252d37;
+  color: #7c8798;
+  border-radius: 50%;
+  height: 4.5rem;
+  width: 4.5rem;
+  padding: 1.5rem;
+}
+.genCont .boxCont .buttonCont .bttnSubmit {
+  grid-column: span 5/6;
+  border-radius: 5rem;
+  background-color: darkorange;
+  border: none;
+  width: 100%;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.selected {
+  background-color: white;
 }
 
 * {
@@ -15,7 +99,7 @@
 html {
   font-family: "Bellefair", serif;
   font-size: 10px;
-  background-color: #121417;
+  background-color: black;
   color: white;
 }
 

@@ -1,8 +1,69 @@
-.box__container {
-    padding: 1rem;
-    // background-color: $DarkBlue;
-    display: grid;
-    justify-items: center;
-    
-    margin: 50vmin;
+@import 'reset';
+.genCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    .boxCont {
+        background-color: $VeryDarkBlue;
+        padding: 2rem;
+        border-radius: 1rem;
+        .starCont {
+            background-color: $DarkBlue;
+            padding: 1rem;
+            border-radius: 50%;
+            align-self: flex-start;
+            display: block;
+            width: max-content;
+        }
+        .writingCont {
+            h1 {
+                margin: 2rem;
+                margin-inline-start: 0;
+                font-size: 4rem;
+                font-weight: 500;
+            }
+            p{
+                font-size:2rem;
+            }
+        }
+        .buttonCont {
+            display: grid;
+            grid-template-rows: repeat(2, 5rem);
+            grid-template-columns: repeat(5, 4.5rem);
+            width: 100%;
+            justify-content: space-between;
+            gap: 2rem;
+            margin-top: 2rem;
+            .bttn {
+                border: none;
+                background-color: transparent;
+                cursor: pointer;
+                p {
+                    background-color: $DarkBlue;
+                    color: $mediumGrey;
+                    border-radius: 50%;
+                    height: 4.5rem;
+                    width: 4.5rem;
+                    padding: 1.5rem;
+                }
+            }
+            .bttnSubmit {
+                grid-column: span 5/6;
+                border-radius: 5rem;
+                background-color: darkorange;
+                border: none;
+                width: 100%;
+                color: white;
+                text-transform: uppercase;
+                letter-spacing: 0.5rem;
+                font-size: 1.5rem;
+                
+            }
+        }
+    }
+}
+.selected {
+    background-color: white;
 }
